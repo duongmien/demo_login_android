@@ -15,17 +15,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="290dp"
         android:layout_centerHorizontal="true"
-        android:textColor="#FF6838"
-        android:textSize="70sp"
-        android:text="Sunshine"
+        android:layout_marginTop="290dp"
         android:fontFamily="@font/dancingscript"
-        />
+        android:text="Sunshine"
+        android:textColor="#FF6838"
+        android:textSize="70sp" />
     <TextView
         android:id="@+id/slogan"
         android:layout_width="wrap_content"
