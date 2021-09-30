@@ -5,19 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
+
     <ImageView
         android:id="@+id/img_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/login"
-        android:layout_marginTop="-400dp"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="-400dp"
+        android:src="@drawable/login" />
     <TextView
         android:id="@+id/textDN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ĐĂNG NHẬP"
+        android:text="SIGN IN"
         android:textSize="40sp"
         android:textColor="#FF6838"
         android:fontFamily="@font/opensans"
@@ -26,30 +26,93 @@
         android:layout_marginTop="300dp"
         />
     <EditText
-        android:id="@+id/pass"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="330dp"
         android:height="60dp"
         android:layout_below="@id/textDN"
         android:layout_centerHorizontal="true"
-        android:inputType="textPassword"
-        android:hint="Nhập pass word..."
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:background="@drawable/edit_text_border"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:hint="Enter username or email..."
         />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="330dp"
+        android:height="60dp"
+        android:background="@drawable/edit_text_border"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:hint="Enter password..."
+        android:inputType="textPassword" />
+
     <Button
         android:id="@+id/bt_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/pass"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:width="330dp"
-        android:height="60dp"
+        android:height="55dp"
         android:background="@drawable/button_bg"
         android:fontFamily="@font/opensans"
-        android:text="ĐĂNG NHẬP"
-        android:textSize="23dp"
+        android:text="SIGN IN"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="23dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/img_gg"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bt_login"
+        android:layout_toLeftOf="@id/img_IG"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gg" />
+
+    <ImageView
+        android:id="@+id/img_IG"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ig"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:id="@+id/img_fb"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bt_login"
+        android:src="@drawable/fb"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/img_IG"/>
+    <TextView
+        android:id="@+id/quenmatkhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu?"
+        android:textSize="15sp"
+        android:textColor="#FF6838"
+        android:fontFamily="@font/opensans"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_below="@id/img_IG"
+        android:layout_marginTop="10dp"
+        />
+
 
 </RelativeLayout>
